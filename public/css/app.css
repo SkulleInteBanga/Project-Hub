@@ -1,0 +1,30 @@
+
+.welcome-background {
+    margin-top: 0;
+    background-image: url("/images/welcome-background.jpeg");
+    background-size: fill;
+}
+
+.welcome-overlay {
+    position: fixed;
+    background-color: rgba(0,0,0,0.8);
+    height: 100%;
+    width: 100%;
+    left: 0;
+    display: flex;
+    align-items: center;
+}
+
+.welcome-text {
+    font-family: 'Roboto', sans-serif;
+    color: white;
+}
+
+.welcome-input {
+    background: transparent;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+}
