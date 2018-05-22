@@ -1,19 +1,27 @@
-$(".welcome-text").hide(0);
-$("#name").hide(0);
+$("#welcome-box").hide(0);
+$('#login-box').hide(0);
+$('#register-box').hide(0);
 
 $(document).ready(function(){
-    $(".welcome-text").delay(750).fadeIn(3000).fadeOut(3000);
-    setTimeout(introText, 6700);
-    setTimeout(showInput, 13400);
+    $('#welcome-box').delay(250).fadeIn(1500);
 });
 
-function introText() {
-    $(".welcome-text").text('Welcome to Project Hub');
-    $(".welcome-text").delay(750).fadeIn(3000).fadeOut(3000);
-}
+$('#login').click(function(){
+    $('#welcome-box').fadeOut(1500);
+    $('#login-box').delay(1500).fadeIn(1500);
+});
 
-function showInput() {
-    $(".welcome-text").text('What is your name?');
-    $("#name").delay(500).fadeIn(3000);
-    $(".welcome-text").fadeIn(3000);
-}
+$('#register').click(function(){
+    $('#welcome-box').fadeOut(1500);
+    $('#register-box').delay(1500).fadeIn(1500);
+});
+
+$('#login-change').click(function(){
+    $('#register-box').fadeOut(1500);
+    $('#login-box').delay(1500).fadeIn(1500);
+});
+
+$('#register-change').click(function(){
+    $('#login-box').fadeOut(1500);
+    $('#register-box').delay(1500).fadeIn(1500);
+});

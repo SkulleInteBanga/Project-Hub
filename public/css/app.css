@@ -1,8 +1,82 @@
 
+/* GENERAL */
+
+html, body {
+    height: 100%;
+}
+
+.container-fluid {
+   height: 100%;
+}
+
+.center {
+    margin: auto;
+}
+
+.weather-box {
+    top: 0;
+    position: fixed;
+    width: 150px;
+    height: 90px;
+}
+
+.weather-box h1 {
+    font-family: 'Roboto', sans-serif;
+    color: #fff;
+    margin-top: 20px;
+    margin-right: 45px;
+    font-size: 30px;
+    font-weight: 100;
+}
+
+.weather-box h5 {
+    font-weight: 100;
+    margin-right: 53px;
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+    line-height: 0;
+    font-size: 15px;
+}
+
+.date-box {
+    top: 0;
+    right: 0;
+    position: fixed;
+    width: 150px;
+    height: 90px;
+}
+
+.date-box h1 {
+    font-family: 'Roboto', sans-serif;
+    color: #fff;
+    margin-top: 20px;
+    margin-left: 35px;
+    font-size: 30px;
+    font-weight: 100;
+}
+
+.copyright-box {
+    position: fixed;
+    width: 100%;
+    height: 30px;
+    bottom: 0;
+}
+.copyright-box p {
+    color: #fff;
+    font-size: 15px;
+}
+
+/* HOME PAGE */
+
+.home-background {
+    background-image: url('http://www.intrawallpaper.com/static/images/hd-3d-wallpapers-for-pc-1080p-free-download-2.jpg');
+}
+
+/* WELCOME PAGE */
+
 .welcome-background {
     margin-top: 0;
     background-image: url("/images/welcome-background.jpeg");
-    background-size: fill;
 }
 
 .welcome-overlay {
@@ -20,11 +94,80 @@
     color: white;
 }
 
-.welcome-input {
+.welcome-text.login {
+    font-size: 18px;
+}
+
+.welcome-text.login-not {
+    font-size: 18px;
+    color: #808080;
+    opacity: 0.65;
+}
+
+.welcome-text.login-not:hover {
+    cursor: pointer;
+}
+
+.welcome-button {
     background: transparent;
-    border-top: 0;
-    border-left: 0;
-    border-right: 0;
-    color: white;
+    color: #fff;
+    border: 1px solid #fff;
+    width: 35%;
+    height: 50px;
     font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    cursor: pointer;
+    font-weight: 100;
+}
+
+.welcome-button.sign-in {
+    width: 100%;
+}
+
+.welcome-button:hover {
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+}
+
+.welcome-button.password {
+    height: 30px;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.welcome-input {
+    font-family: 'Roboto', sans-serif;
+    color: #fff;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid #a6a6a6;
+    width: 100%;
+    font-size: 13px;
+    font-weight: 100;
+}
+
+.welcome-input-box {
+    border-radius: 5px;
+    background-color: rgba(0,0,0,0.5);
+    margin: auto;
+    height: 450px;
+    width: 350px !important;
+}
+
+.welcome-label {
+    font-family: 'Roboto', sans-serif;
+    color: #a6a6a6;
+    font-size: 13px;
+    font-weight: 100;
+}
+
+.welcome-label.password {
+    font-weight: 400;
+    float: right;
+}
+
+.welcome-label.password:hover {
+    opacity: 0.65;
+    cursor: pointer;
 }
